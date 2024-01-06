@@ -37,6 +37,10 @@ body{
     color:red;
 }
 
+.td-textarea{
+    vertical-align:top;
+}
+
 .btn-area{
     text-align:center;
     vertical-align:top;
