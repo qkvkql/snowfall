@@ -37,10 +37,6 @@ body{
     color:red;
 }
 
-.td-textarea{
-    vertical-align:top;
-}
-
 .btn-area{
     text-align:center;
     vertical-align:top;
@@ -63,10 +59,14 @@ body{
     background-color:black;
 }
 
+.td-output{
+    vertical-align:top;
+}
 #output{
     text-align:left;
     padding-left:65px;
+    padding-top:4px;
     font-size:18px;
     line-height:24px;
-    vertical-align:top;
+    margin:0px;
 }
