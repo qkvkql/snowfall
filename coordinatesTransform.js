@@ -13,7 +13,7 @@ function getResult(str){
     //get total row number
     let splitRowPatt = /\n/i;
     let rowArr = str.split(splitRowPatt);
-    this.total = rowArr.length;
+    this.total = str.length < 1 ? 0 : rowArr.length;
     
     //get transform result
     this.getTransformResult = () => {
