@@ -14,6 +14,23 @@ document.addEventListener('DOMContentLoaded',function(event){
         for(let i=1; i<sfArr.length-3; i++){
             eval("document.getElementById('rm" + i + "').innerText = sfArr[" + i + "]");
         }
+
+        //display data together
+        let data = '';
+        for(let i=0; i<sfArr.length-3; i++){
+            data += sfArr[i] + '\n';
+        }
+        document.getElementById('data').innerText = data;
+
+        //copy data of array
+        let dataToCopy = '';
+        let l = sfArr.length - 3;
+        for(let i=0; i<l-1; i++){
+            dataToCopy += '\'' + sfArr[i] + '\'\, ';
+        }
+        dataToCopy += '\'' + sfArr[l-1] + '\'';
+        let cb = new ClipboardJS('#btn');
+        document.getElementById('btn').setAttribute('data-clipboard-text', dataToCopy);
     }
 });
 

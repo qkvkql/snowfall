@@ -1,3 +1,31 @@
 td{
     width: 100px;
 }
+.part1{
+    float:left;
+    width:50%;
+}
+.part2{
+    float:left;
+    width:40%;
+    height:600px;
+    border:1px solid black;
+}
+.part2-wrapper{
+    margin:20px; 
+    border:1px solid black;
+}
+#data{
+    padding:20px 0 0 20px;
+}
+#btn{
+    width: 200px;
+    height: 40px;
+    background-color: blueviolet;
+    color:aliceblue;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#btn:hover{
+    opacity: 60%;
+}
