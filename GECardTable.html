@@ -2,127 +2,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-	<link href="images/logo.png" type="image/x-icon" rel="shortcut icon" />
+	<link href="images/logo.png" type="image/x-icon" rel="shortcut icon" />  
+    <!--
+    Clipboard
+    //css
     <link rel="stylesheet" href="GECardTable.css" type="text/css" />
-	<script src="GECardTable.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/qkvkql/snowfall@v1/GECardTable.min.css" type="text/css" />
+    //javascript
+    <script type="text/javascript" src="GECardTable.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/qkvkql/snowfall@v1/GECardTable.min.js"></script>
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/qkvkql/snowfall@v1/GECardTable.min.css" type="text/css" />
+    <script  type="text/javascript" src="GECardTable.js"></script>    
 	<title>谷歌地球卡片 添加说明 HTML</title>
 </head>
 <body>
-    <div class="table-area">
-        <table>
-            <!-- Basic Info -->
-            <tr>
-                <td colspan="5" id="resort"><span class="resort-padding-r">雪乡龙岭野雪公园</span></td>
-            </tr>
-            <tr>
-                <td colspan="5" class="mountain">山脉：<span id="mountain">长白山</span></td>
-            </tr>
-            <tr>
-                <td colspan="5" class="country">国家：<span id="country">中国</span></td>
-            </tr>
-            <tr>
-                <td colspan="5" id="year" class="border-l border-r">2023年降雪量(mm)</td>
-            </tr>
-
-            <!-- SF -->
-            <!-- Annual -->
-            <tr>
-                <td class="total-label border-l border-r border-b">SF</td>
-                <td id="sf-total" class="border-r border-b"></td>
-                <td class="space"></td>
-                <td class="total-label border-l border-r border-b">SNO</td>
-                <td id="sno-total" class="border-r border-b"></td>
-            </tr>
-            <!-- Monthly -->
-            <tr>
-                <td class="monthly-label border-l border-r">一月</td>
-                <td class="monthly-value border-r" id="sf-01"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">一月</td>
-                <td class="monthly-value border-r" id="sno-01"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">二月</td>
-                <td class="monthly-value border-r" id="sf-02"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">二月</td>
-                <td class="monthly-value border-r" id="sno-02"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">三月</td>
-                <td class="monthly-value border-r" id="sf-03"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">三月</td>
-                <td class="monthly-value border-r" id="sno-03"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">四月</td>
-                <td class="monthly-value border-r" id="sf-04"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">四月</td>
-                <td class="monthly-value border-r" id="sno-04"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">五月</td>
-                <td class="monthly-value border-r" id="sf-05"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">五月</td>
-                <td class="monthly-value border-r" id="sno-05"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">六月</td>
-                <td class="monthly-value border-r" id="sf-06"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">六月</td>
-                <td class="monthly-value border-r" id="sno-06"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">七月</td>
-                <td class="monthly-value border-r" id="sf-07"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">七月</td>
-                <td class="monthly-value border-r" id="sno-07"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">八月</td>
-                <td class="monthly-value border-r" id="sf-08"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">八月</td>
-                <td class="monthly-value border-r" id="sno-08"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">九月</td>
-                <td class="monthly-value border-r" id="sf-09"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">九月</td>
-                <td class="monthly-value border-r" id="sno-09"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">十月</td>
-                <td class="monthly-value border-r" id="sf-10"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">十月</td>
-                <td class="monthly-value border-r" id="sno-10"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">十一月</td>
-                <td class="monthly-value border-r" id="sf-11"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">十一月</td>
-                <td class="monthly-value border-r" id="sno-11"></td>
-            </tr>
-            <tr>
-                <td class="monthly-label border-l border-r">十二月</td>
-                <td class="monthly-value border-r" id="sf-12"></td>
-                <td class="space"></td>
-                <td class="monthly-label border-l border-r">十二月</td>
-                <td class="monthly-value border-r" id="sno-12"></td>
-            </tr>
-            <tr>
-                <td colspan="5" id="note">数据通过气象查询软件"WheatA小麦芽"查询得到<br>SF 和 SNO 是两种不同规则下的降雪量，不能混淆</td>
-            </tr>
-
-        </table>
-    </div>
+    <script type="text/javascript">
+        setValue();
+    </script>
 </body>
 </html>
