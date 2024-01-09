@@ -18,14 +18,18 @@ td{
 #data{
     padding:20px 0 0 20px;
 }
-#btn{
+.btn{
     width: 200px;
     height: 40px;
+    margin:4px 0 4px 0;
     background-color: blueviolet;
-    color:aliceblue;
+    color:antiquewhite;
     border-radius: 8px;
     font-weight: bold;
 }
-#btn:hover{
+.btn:hover{
     opacity: 60%;
+}
+.arr-code, .table-row{
+    color:aqua;
 }

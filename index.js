@@ -23,14 +23,23 @@ document.addEventListener('DOMContentLoaded',function(event){
         document.getElementById('data').innerText = data;
 
         //copy data of array
-        let dataToCopy = '';
         let l = sfArr.length - 3;
+        //button to copy arr code
+        let arrCodeToCopy = ' \[';
         for(let i=0; i<l-1; i++){
-            dataToCopy += '\'' + sfArr[i] + '\'\, ';
+            arrCodeToCopy += '\'' + sfArr[i] + '\'\, ';
         }
-        dataToCopy += '\'' + sfArr[l-1] + '\'';
-        let cb = new ClipboardJS('#btn');
-        document.getElementById('btn').setAttribute('data-clipboard-text', dataToCopy);
+        arrCodeToCopy += '\'' + sfArr[l-1] + '\'\]\;';
+        let cbArrCode = new ClipboardJS('#btn-arr');
+        document.getElementById('btn-arr').setAttribute('data-clipboard-text', arrCodeToCopy);
+        //button to copy table row
+        let tableRowToCopy = '';
+        for(let i=0; i<l-1; i++){
+            tableRowToCopy += sfArr[i] + '\t';
+        }
+        tableRowToCopy += sfArr[l-1];
+        let cbTableRow = new ClipboardJS('#btn-table-row');
+        document.getElementById('btn-table-row').setAttribute('data-clipboard-text', tableRowToCopy);
     }
 });
 
