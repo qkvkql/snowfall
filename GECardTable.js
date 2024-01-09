@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    //run
-    setValue();
+    
 });
 
 let sfData = ['1093.64', '372.36', '241.04', '184.46', '101.09', '68.42', '2.46', '0', '5.97', '74.01', '144.65', '158.21', '240.88'];
@@ -67,8 +66,9 @@ let colorArr = [
 ];
 
 function setValue(){
-    createCardDiv('resort-01');
-    document.getElementById('resort-01').innerHTML = cardTableHTML;
+    let div = document.getElementById('resort-01');
+    div.setAttribute('class', 'table-area');
+    div.innerHTML = cardTableHTML;
     for(let i=0; i<sfDataIdArr.length; i++){
         setOneValue(sfDataIdArr[i], sfDataIdArr, sfData);
     }
@@ -102,13 +102,6 @@ function setOneValue(id, idArr, dataArr){
     if(n > valueArr[l - 1]){
         e.style.backgroundColor = colorArr[l];
     }
-}
-
-function createCardDiv(id){
-    let div = document.createElement('div');
-    div.setAttribute('id', id);
-    div.setAttribute('class', 'table-area');
-    document.body.appendChild(div);
 }
 
 let cardTableHTML = `<table>
