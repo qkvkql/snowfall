@@ -24,17 +24,10 @@ document.addEventListener('DOMContentLoaded',function(event){
 
         //copy data of array
         let l = sfArr.length - 3;
-        //button to copy arr code
-        let arrCodeToCopy = ' \[';
-        for(let i=0; i<l-1; i++){
-            arrCodeToCopy += '\'' + sfArr[i] + '\'\, ';
-        }
-        arrCodeToCopy += '\'' + sfArr[l-1] + '\'\]\;';
-        let cbArrCode = new ClipboardJS('#btn-arr');
-        document.getElementById('btn-arr').setAttribute('data-clipboard-text', arrCodeToCopy);
-        //button to copy table row
+        
+        //button to copy table row of snowfall data 不复制 sfArr[0]的总数(总数在excel里sum) from (exclude total) jan to ... to dec
         let tableRowToCopy = '';
-        for(let i=0; i<l-1; i++){
+        for(let i=1; i<l-1; i++){
             tableRowToCopy += sfArr[i] + '\t';
         }
         tableRowToCopy += sfArr[l-1];
@@ -48,7 +41,8 @@ function getLatLon(str){
     let d = Number(arr[0].trim());
     let m = Number(arr[1].trim())/60;
     let s = Number(arr[2].trim())/3600;
-    let result = arr[3].trim() == "西" || arr[3].trim() == "南" ? (-1) * (d + m + s).toFixed(2) : (d + m + s).toFixed(2);
+    //let result = arr[3].trim() == "西" || arr[3].trim() == "南" ? (-1) * (d + m + s).toFixed(2) : (d + m + s).toFixed(2); //结果保留2位小数
+    let result = arr[3].trim() == "西" || arr[3].trim() == "南" ? (-1) * (d + m + s) : (d + m + s); //结果尽量精确
     return result;
 }
 function getSnowFall(str){

@@ -1,19 +1,21 @@
-body{
+/*set 2 times on the same element to prevent body set invalid in google interted html*/
+body, .ski-resort-body{
     background-color: #1F1F1F;
 }
 .table-area{
-    padding: 5px 0 5px 0;
+    padding: 5px;
 }
-table{
+.ski-resort-table{
     border-spacing: 0;
 }
 
-#resort{
+#year{
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color:#F9F9F9;
 }
+
 .resort-padding-r{
     display: inline-block;
     margin-right:40px;
@@ -23,58 +25,54 @@ table{
     font-family: KaiTi;
     color:#F9F9F9;
 }
-.country{
+.region{
     height:40px;
-    vertical-align: baseline;
+    vertical-align: bottom;
     font-family: KaiTi;
     color:#F9F9F9;
 }
 
-#year{
-    height:48px;
+#resort{
+    height:72px;
     border-top:1px solid #4CC9F0;
     border-bottom:1px solid #4CC9F0;
     text-align: center;
     font-weight: bold;
-    font-family: YouYuan;
-    font-size:20px;
+    font-size:24px;
     color:#F9F9F9;
+    font-family: YouYuan;
 }
 
 .total-label{
     width:60px;
-    height:36px;
+    height:48px;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color:#F9F9F9;
+    text-align: right;
+    padding-right: 6px;
 }
 #sf-total{
+    width:200px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     color:#F9F9F9;
-}
-#sno-total{
-    font-weight: bold;
-    font-size: 24px;
-    color:#F9F9F9;
-}
-.space{
-    width:20px;
+    padding-left:8px;
 }
 .monthly-label{
     text-align: right;
-    padding-right: 4px;
+    padding-right: 6px;
     font-size:14px;
     color:#F9F9F9;
 }
 .monthly-value{
-    width:80px;
     font-size:14px;
     color:#F9F9F9;
+    padding-left: 8px;
 }
 #note{
-    height:32px;
+    height:40px;
     border:1px solid #4CC9F0;
     text-align: center;
     font-size:12px;
